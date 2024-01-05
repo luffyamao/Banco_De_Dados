@@ -1,9 +1,11 @@
-const apelido = JSON.parse(localStorage.getItem("BancoDeDados"))[0].apelido;
-const desfazer = JSON.parse(localStorage.getItem("BancoDeDados"))[0].desfazer;
-const cor = JSON.parse(localStorage.getItem("BancoDeDados"))[0].cor;
-const comida = JSON.parse(localStorage.getItem("BancoDeDados"))[0].comida;
-const suportar = JSON.parse(localStorage.getItem("BancoDeDados"))[0].suportar;
-const inspiraçao = JSON.parse(localStorage.getItem("BancoDeDados"))[0].inspiraçao;
+const bd = JSON.parse(localStorage.getItem("BancoDeDados"));
+
+const apelido = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].apelido;
+const desfazer = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].desfazer;
+const cor = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].cor;
+const comida = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].comida;
+const suportar = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].suportar;
+const inspiraçao = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].inspiraçao;
 
 var finalHistoria = `Uau, você conseguiu escolher o copo certo, parabéns! Me conta mais sobre você... Tem algo que você queria desfazer? \n
             ${apelido} - ${desfazer} \n

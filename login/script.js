@@ -51,23 +51,23 @@ function adicionar(event) {
     window.location.href = "../historia/index.html"
 
 }
-
-const nome = JSON.parse(localStorage.getItem("BancoDeDados"))[0].nome;
-const apelido = JSON.parse(localStorage.getItem("BancoDeDados"))[0].apelido;
-const idade = JSON.parse(localStorage.getItem("BancoDeDados"))[0].idade;
-const musica = JSON.parse(localStorage.getItem("BancoDeDados"))[0].musica;
-const cor = JSON.parse(localStorage.getItem("BancoDeDados"))[0].cor;
-const comida = JSON.parse(localStorage.getItem("BancoDeDados"))[0].comida;
-const cinema = JSON.parse(localStorage.getItem("BancoDeDados"))[0].cinema;
-const amizade = JSON.parse(localStorage.getItem("BancoDeDados"))[0].amizade;
-const lugar = JSON.parse(localStorage.getItem("BancoDeDados"))[0].lugar;
-const inspiraçao = JSON.parse(localStorage.getItem("BancoDeDados"))[0].inspiraçao;
-const louco = JSON.parse(localStorage.getItem("BancoDeDados"))[0].louco;
-const sonho = JSON.parse(localStorage.getItem("BancoDeDados"))[0].sonho;
-const profissao = JSON.parse(localStorage.getItem("BancoDeDados"))[0].profissao;
-const trabalho = JSON.parse(localStorage.getItem("BancoDeDados"))[0].trabalho;
-const desfazer = JSON.parse(localStorage.getItem("BancoDeDados"))[0].desfazer;
-const suportar = JSON.parse(localStorage.getItem("BancoDeDados"))[0].suportar;
+const bd = JSON.parse(localStorage.getItem("BancoDeDados"));
+const nome = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].nome;
+const apelido = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].apelido;
+const idade = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].idade;
+const musica = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].musica;
+const cor = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].cor;
+const comida = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].comida;
+const cinema = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].cinema;
+const amizade = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].amizade;
+const lugar = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].lugar;
+const inspiraçao = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].inspiraçao;
+const louco = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].louco;
+const sonho = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].sonho;
+const profissao = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].profissao;
+const trabalho = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].trabalho;
+const desfazer = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].desfazer;
+const suportar = JSON.parse(localStorage.getItem("BancoDeDados"))[bd.length -1].suportar;
 
 
 var historia = `Um garoto perdido em suas emoções, o que você tá fazendo aqui, ${nome}? \n
